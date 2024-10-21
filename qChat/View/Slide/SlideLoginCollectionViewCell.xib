@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SlideLoginCollectionViewCell" customModule="qChat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="904"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="417" height="904"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jsj-v3-saz">
+                        <rect key="frame" x="0.0" y="0.0" width="417" height="904"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Glass Object Green Background" translatesAutoresizingMaskIntoConstraints="NO" id="ffM-jP-Jdj">
+                                <rect key="frame" x="0.0" y="0.0" width="417" height="904"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="qChat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRf-df-x0h">
+                                <rect key="frame" x="32" y="270" width="172.33333333333334" height="71.666666666666686"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6h-So-C3q">
+                                <rect key="frame" x="88" y="769.66666666666663" width="241" height="34.333333333333371"/>
+                                <color key="backgroundColor" red="0.16078431372549018" green="0.50196078431372548" blue="0.43052846138455381" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" systemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Регистрация"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="regBtnClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="pfo-q2-cdk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCE-kU-310">
+                                <rect key="frame" x="172.33333333333334" y="812.66666666666663" width="72.666666666666657" height="34.333333333333371"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Войти"/>
+                                <connections>
+                                    <action selector="authBtnCkick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="2sv-d3-XIe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Общайся легко и будь ближе." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apO-qA-fw8">
+                                <rect key="frame" x="8" y="390" width="291" height="71.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="apO-qA-fw8" secondAttribute="trailing" constant="118" id="5BE-sf-9dq"/>
+                            <constraint firstItem="b6h-So-C3q" firstAttribute="leading" secondItem="Jsj-v3-saz" secondAttribute="leading" constant="88" id="6Qx-2h-oLb"/>
+                            <constraint firstAttribute="trailing" secondItem="b6h-So-C3q" secondAttribute="trailing" constant="88" id="9n2-FX-rDb"/>
+                            <constraint firstItem="OCE-kU-310" firstAttribute="centerX" secondItem="Jsj-v3-saz" secondAttribute="centerX" id="BUW-oG-Dc4"/>
+                            <constraint firstItem="b6h-So-C3q" firstAttribute="leading" secondItem="Jsj-v3-saz" secondAttribute="leading" constant="88" id="F4r-fO-GeZ"/>
+                            <constraint firstAttribute="trailing" secondItem="b6h-So-C3q" secondAttribute="trailing" constant="88" id="Frs-TH-dZJ"/>
+                            <constraint firstAttribute="bottom" secondItem="ffM-jP-Jdj" secondAttribute="bottom" id="Mve-Uc-nfr"/>
+                            <constraint firstItem="OCE-kU-310" firstAttribute="top" secondItem="b6h-So-C3q" secondAttribute="bottom" constant="8.6699999999999999" id="NJD-dw-TGA"/>
+                            <constraint firstAttribute="trailing" secondItem="ffM-jP-Jdj" secondAttribute="trailing" id="bQH-g0-pcr"/>
+                            <constraint firstItem="ffM-jP-Jdj" firstAttribute="leading" secondItem="Jsj-v3-saz" secondAttribute="leading" id="dvg-mo-etE"/>
+                            <constraint firstItem="ffM-jP-Jdj" firstAttribute="top" secondItem="Jsj-v3-saz" secondAttribute="top" id="fef-Kp-ztv"/>
+                            <constraint firstItem="apO-qA-fw8" firstAttribute="top" secondItem="bRf-df-x0h" secondAttribute="bottom" constant="48.329999999999998" id="kih-bK-7I1"/>
+                            <constraint firstItem="apO-qA-fw8" firstAttribute="leading" secondItem="Jsj-v3-saz" secondAttribute="leading" constant="8" id="nYT-Wv-2VX"/>
+                            <constraint firstItem="OCE-kU-310" firstAttribute="top" secondItem="b6h-So-C3q" secondAttribute="bottom" constant="8.6699999999999999" id="rJK-p3-Lol"/>
+                            <constraint firstItem="bRf-df-x0h" firstAttribute="top" secondItem="Jsj-v3-saz" secondAttribute="top" constant="270" id="w7o-Lb-pgx"/>
+                            <constraint firstAttribute="bottom" secondItem="OCE-kU-310" secondAttribute="bottom" constant="57" id="zS8-yo-bb8"/>
+                            <constraint firstItem="bRf-df-x0h" firstAttribute="leading" secondItem="Jsj-v3-saz" secondAttribute="leading" constant="32" id="zkf-bJ-f9W"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Jsj-v3-saz" secondAttribute="bottom" id="2zd-pX-kuk"/>
+                <constraint firstItem="Jsj-v3-saz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Lur-Vs-Zxs"/>
+                <constraint firstItem="Jsj-v3-saz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SgT-ah-gwh"/>
+                <constraint firstItem="Jsj-v3-saz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="h3i-VF-keJ"/>
+                <constraint firstItem="Jsj-v3-saz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mA9-cd-3bk"/>
+                <constraint firstAttribute="trailing" secondItem="Jsj-v3-saz" secondAttribute="trailing" id="pMH-X6-t1d"/>
+            </constraints>
+            <size key="customSize" width="417" height="904"/>
+            <connections>
+                <outlet property="authBtn" destination="OCE-kU-310" id="LUc-8a-1O7"/>
+                <outlet property="descriptionText" destination="apO-qA-fw8" id="fUp-gJ-8DH"/>
+                <outlet property="regBtn" destination="b6h-So-C3q" id="2Us-RK-am3"/>
+                <outlet property="slideImg" destination="ffM-jP-Jdj" id="yYV-7L-f8S"/>
+            </connections>
+            <point key="canvasLocation" x="359.5419847328244" y="-179.57746478873241"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Glass Object Green Background" width="2600" height="3840"/>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
